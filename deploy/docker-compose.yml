@@ -1,0 +1,50 @@
+version: '3.8'
+
+services:
+  elasticsearch:
+    image: harbor.tallerdevops.com/actividad3-enrique-yepez/elasticsearch@sha256:bc693247a6b0eb903238e3c06671db10b37f0fcb32a76b6cc9ae8a6b1755df64
+    container_name: elasticsearch-practica
+    networks:
+      - backend_database_network
+    volumes:
+      - /Users/enriqueyepez/Documents/learning/devops/database-data:/usr/share/elasticsearch/data
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      - discovery.type=single-node
+
+  iotdevices-container:
+    build:
+      context: ../packages/iotdevices
+      dockerfile: Dockerfile
+    container_name: iotdevices-container
+    ports:
+      - "80:80"
+    networks:
+      - frontend_backend_network
+    environment:
+      - API_URL=http://infraestructure-container:8081
+
+  infraestructure-container:
+    build:
+      context: ../packages/infrastructura
+      dockerfile: Dockerfile
+    container_name: infraestructure-container
+    ports:
+      - "8081:8081"
+    networks:
+      - frontend_backend_network
+      - backend_database_network
+    environment:
+      - ELASTICSEARCH_HOST=elasticsearch-practica
+      - ELASTICSEARCH_PORT=9200
+
+networks:
+  backend_database_network:
+    name: backend_database_network
+  frontend_backend_network:
+    name: frontend_backend_network
+
+volumes:
+  database-data:

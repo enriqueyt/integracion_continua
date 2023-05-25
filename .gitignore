@@ -1,0 +1,6 @@
+node_modules
+packages/infrastruture/node_modules
+packages/infrastrutura/dist
+database-data
+.DS_Store
+.vscode/
