@@ -94,7 +94,7 @@ Para crear un PR: Luego de haber empujado las rama a GitHub con el comando `git 
 ## Estándares de Commit
 Al momento de realizar un commit, es importante aplicar el  siguiente estándar de mensaje  de la empresa:
 
-git commit -m "<<iniciales del desarrollador>> - <<prefijo del tipo de cambio>> - <<mensaje>>
+git commit -m "<< "iniciales del desarrollador ">> - <<"prefijo del tipo de cambio">> - <<"mensaje">>
 
 Ejemplo
 
