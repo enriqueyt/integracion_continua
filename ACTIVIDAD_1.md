@@ -89,3 +89,23 @@ Para crear un PR: Luego de haber empujado las rama a GitHub con el comando `git 
 4. Clic en "Create Pull Request".
 5. Assignar el PR a desarrollador.
 6. Una vez completada la actividad solicitar una revisión.
+
+
+## Estándares de Commit
+Al momento de realizar un commit, es importante aplicar el  siguiente estándar de mensaje  de la empresa:
+
+git commit -m "<< "iniciales del desarrollador ">> - <<"prefijo del tipo de cambio">> - <<"mensaje">>
+
+Ejemplo
+
+git commit -m "jfot-docs-se adiciona cambios en el readme de proyecto"
+
+Los prefijos son los siguientes:
+
+feat: Una nueva caracteristica para el usuario.
+fix: Arregla un bug de desarrollo.
+build: Cambios en el sistema de build, tareas de despliegue o instalación.
+ci: Cambios en la integración continua.
+docs: Cambios en la documentación.
+style: Cambios de formato, tabulaciones, espacios o puntos y coma, etc; no afectan al usuario.
+test: Añade tests o refactoriza uno existente.
