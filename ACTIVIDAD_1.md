@@ -17,6 +17,7 @@ Recomendamos el uso de [Visual Studio Code](https://code.visualstudio.com/downlo
 2. [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode): Formateador de código para mantener la consistencia de estilo.
 3. [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker): Ayuda a desarrollar aplicaciones de Docker proporcionando comandos para trabajar con imágenes y contenedores.
 4. [VSCode Elasticsearch](https://marketplace.visualstudio.com/items?itemName=kiwfy.elasticsearch): Proporciona atajos y comandos útiles para trabajar con Elasticsearch.
+5. [YAML](redhat.vscode-yaml): Extension de Soporte para YAML.
 
 ## Mejores Prácticas para Usar Git, Commits y Pull Requests en GitHub
 
