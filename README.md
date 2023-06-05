@@ -1,8 +1,8 @@
 # Proyecto IoT usando Elasticsearch
 
-Este proyecto es una aplicación web que utiliza Elasticsearch como base de datos. Necesito utilizar Elasticsearch en mi trabajo, por lo que utilizaré esta tecnología en este proyecto dé contenedores. La aplicación permitir a los usuarios cargar archivos y realizar búsquedas en tiempo real. Se ha creado este proyecto para cumplir con los requisitos del módulo 4 - Contenedores.
+Este proyecto es una aplicación Web que utiliza Elasticsearch como base de datos. Necesito utilizar Elasticsearch en mi trabajo, por lo que utilizaré esta tecnología en este proyecto de contenedores. La aplicación permite a los usuarios cargar archivos y realizar búsquedas en tiempo-real. Se ha creado este proyecto para cumplir con los requisitos del módulo 4 - Contenedores.
 
-Este proyecto de ejemplo lo pienso usar para prácticas de IoT, se deberá configurar Kafka como message bus data flow, se creara productores de data (me compre una rasperry PI) y se deberá crear consumidores que almacenen la información en Elastic, luego se expondrá unos endpoints para exponer la data de Elastic en la página web.
+Este proyecto de ejemplo lo pienso usar para prácticas de IoT, se deberá configurar Kafka como message bus data flow, se creará productores de data (me compré una Raspberry Pi) y se deberá crear consumidores que almacenen la información en Elastic, luego se expondrá unos endpoints para exponer la data de Elastic en la página Web.
 
 ## Requisitos previos
 
