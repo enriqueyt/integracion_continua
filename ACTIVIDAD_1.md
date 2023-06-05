@@ -17,6 +17,7 @@ Recomendamos el uso de [Visual Studio Code](https://code.visualstudio.com/downlo
 2. [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode): Formateador de código para mantener la consistencia de estilo.
 3. [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker): Ayuda a desarrollar aplicaciones de Docker proporcionando comandos para trabajar con imágenes y contenedores.
 4. [VSCode Elasticsearch](https://marketplace.visualstudio.com/items?itemName=kiwfy.elasticsearch): Proporciona atajos y comandos útiles para trabajar con Elasticsearch.
+5. [YAML](redhat.vscode-yaml): Extension de Soporte para YAML.
 
 ## Mejores Prácticas para Usar Git, Commits y Pull Requests en GitHub
 
@@ -89,3 +90,23 @@ Para crear un PR: Luego de haber empujado las rama a GitHub con el comando `git 
 4. Clic en "Create Pull Request".
 5. Assignar el PR a desarrollador.
 6. Una vez completada la actividad solicitar una revisión.
+
+
+## Estándares de Commit
+Al momento de realizar un commit, es importante aplicar el  siguiente estándar de mensaje  de la empresa:
+
+git commit -m "<< "iniciales del desarrollador ">> - <<"prefijo del tipo de cambio">> - <<"mensaje">>
+
+Ejemplo
+
+git commit -m "jfot-docs-se adiciona cambios en el readme de proyecto"
+
+Los prefijos son los siguientes:
+
+feat: Una nueva caracteristica para el usuario.
+fix: Arregla un bug de desarrollo.
+build: Cambios en el sistema de build, tareas de despliegue o instalación.
+ci: Cambios en la integración continua.
+docs: Cambios en la documentación.
+style: Cambios de formato, tabulaciones, espacios o puntos y coma, etc; no afectan al usuario.
+test: Añade tests o refactoriza uno existente.
