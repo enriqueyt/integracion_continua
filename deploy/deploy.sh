@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # descargar las imágenes necesarias
-echo "Descargando imágenes de Docker..."
+echo "Descargando imágenes de Docker...  -se adiciona ajuste de codigo jfot- "
 docker pull node:14
 docker pull docker.elastic.co/elasticsearch/elasticsearch:7.16.3
 
