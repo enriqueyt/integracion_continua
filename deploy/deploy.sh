@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo "realizando cambios desde la playa"
 # descargar las imágenes necesarias
 echo "Descargando imágenes de Docker...ajuste rsm"
 docker pull node:14
