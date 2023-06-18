@@ -1,11 +1,11 @@
 #!/bin/bash
 
 # Detener y eliminar Elastic container.
-echo "Deteniendo y eliminando Elastic container..."
+echo "Deteniendo y eliminando Elastic container...  -se adiciona ajuste de codigo jfot-"
 docker rm -f elasticsearch-practica
 
 # Eliminar la network de backend y database.
-echo "Eliminando networks..."
+echo "Eliminando networks... -se adiciona ajuste de codigo jfot-"
 docker network rm backend_database_network
 docker network rm frontend_backend_network
 
