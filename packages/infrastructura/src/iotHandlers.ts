@@ -24,6 +24,7 @@ export const createDevice = (client: Client) => async (req: any, res: Response) 
 };
 
 export const listDevices = (client: Client) => async (req: Request, res: Response) => {
+<<<<<<< HEAD
     try {
         const result = await client.search({index: INDEX_NAME});
         //@ts-ignore
@@ -33,3 +34,19 @@ export const listDevices = (client: Client) => async (req: Request, res: Respons
       res.status(500).json({ message: "Error listando dispositivos" });
     }
   };  
+=======
+    const result = await client.search({
+    index: INDEX_NAME,
+    body: {
+    query: {
+    match_all: {},
+    },
+    },
+    });
+  
+    //@ts-ignore
+    res.status(200)
+    .json(result.hits.hits.map((hit: any) => hit._source));
+  };
+  
+>>>>>>> develop
