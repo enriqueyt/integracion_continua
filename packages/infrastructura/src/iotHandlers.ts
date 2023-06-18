@@ -24,8 +24,17 @@ export const createDevice = (client: Client) => async (req: any, res: Response) 
 };
 
 export const listDevices = (client: Client) => async (req: Request, res: Response) => {
-    const result = await client.search({index: INDEX_NAME});
+    const result = await client.search({
+    index: INDEX_NAME,
+    body: {
+    query: {
+    match_all: {},
+    },
+    },
+    });
+  
     //@ts-ignore
-    res.status(200).json(result.hits.hits.map((hit: any) => hit._source));
-};
+    res.status(200)
+    .json(result.hits.hits.map((hit: any) => hit._source));
+  };
   
