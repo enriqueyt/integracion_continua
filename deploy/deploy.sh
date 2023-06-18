@@ -1,7 +1,8 @@
 #!/bin/bash
 echo "realizando cambios desde la playa"
 # descargar las imágenes necesarias
-echo "Descargando imágenes de Docker...ajuste rsm"
+echo "Descargando imágenes de Docker...ajuste rsm  -se adiciona ajuste de codigo jfot- "
+
 docker pull node:14
 docker pull docker.elastic.co/elasticsearch/elasticsearch:7.16.3
 
