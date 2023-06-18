@@ -13,4 +13,5 @@ docker network rm frontend_backend_network
 echo "Eliminando la carpeta de persistencia de datos..."
 rm -rf ./database-data
 
-echo "Ajuste de codigo fuente JFOT ejercicio 2 -Se adiciona cambio JFOT para generar conflicto- "
+echo "Ajuste de codigo fuente JFOT ejercicio 2 ajuste del usuario jmratwork -Se adiciona cambio JFOT para generar conflicto-"
+
