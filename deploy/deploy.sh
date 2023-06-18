@@ -1,16 +1,17 @@
 #!/bin/bash
-
+echo "realizando cambios desde la playa"
 # descargar las imágenes necesarias
-echo "Descargando imágenes de Docker...  -se adiciona ajuste de codigo jfot- "
+echo "Descargando imágenes de Docker...ajuste rsm  -se adiciona ajuste de codigo jfot- "
+
 docker pull node:14
 docker pull docker.elastic.co/elasticsearch/elasticsearch:7.16.3
 
 # creacion de una network que aislara la DB
-echo "Creando network para connectar backend y database..."
+echo "Creando network para connectar backend y database...ajuste rsm"
 docker network create backend_database_network
 
 # creando network para conectar front end and backend
-echo "Creando network para conectar front end and backend..."
+echo "Creando network para conectar front end and backend...ajuste rsm"
 docker network create frontend_backend_network
 
 # Crear volumen para la persistencia de datos
